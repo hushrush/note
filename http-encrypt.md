@@ -17,8 +17,7 @@
 + 根据私钥得到公钥
 openssl rsa -in private -pubout> pub
 + 根据公钥得到mod
-公钥中包含n（modulus）和e，n是两个大素数的乘积
-私钥中包含n和d
+公钥中包含n（modulus）和e，n是两个大素数的乘积，私钥中包含n和d
 ```shell 
 openssl rsa -pubin -in pub  -text -modulus
 Public-Key: (2048 bit)
