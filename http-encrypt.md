@@ -50,3 +50,6 @@ oFuzHq2yEW3yTbZH7HM0BXGBJEfu7MAPv3fS1RwB1HSlxQ7HSq5xlVlZivTSgL9J
 bp6f6PJoguDyfNAaBqW7L0lRvH1c4PIRsxZ76dlrT7S/67Y/RnF+72BdO6zVBWlT
 KHTFC+O3PtesuI9rRL5w1n/nsRCwYEWdbSUG4LlTNjoaDclcpaHHgTPx5+EqkPwg
 ```
++ 私钥签名，签名base64编码
+openssl dgst -sign private -sha256 -out aftersign sign
+
