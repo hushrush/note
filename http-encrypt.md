@@ -13,7 +13,7 @@
 
 >    At the end of this process both the browser and the webserver will use the exchanged symmetric key (in the asymmetric key exchange process) to encrypt and decrypt messages >that are sent back and forth between the browser and the webserver.
 
-# openssl 
+# 非对称加密
 + 根据私钥得到公钥
 openssl rsa -in private -pubout> pub
 + 根据公钥得到mod
@@ -53,4 +53,10 @@ KHTFC+O3PtesuI9rRL5w1n/nsRCwYEWdbSUG4LlTNjoaDclcpaHHgTPx5+EqkPwg
 ```
 + 私钥签名，签名后base64编码
 openssl dgst -sign private -sha256 -out aftersign sign
+
+# 对称加密
+aes  解密
+```
+echo "U2FsdGVkX199jgh5oANElFdtCxIEvdEvciLi+v+5loE+VCuy6Ii0b+5byb5DXp32RPmT02Ek1pf55ctQN+DHbwCPiVRfFQamDmbHBUpD7as=" | openssl enc -aes-256-cbc -d -a -kfile default_secret
+```
 
